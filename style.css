@@ -1,0 +1,74 @@
+* {
+  /* setea a 0 porque c/ browser impl diferente */
+  padding: 0px;
+  margin: 0px;
+ }
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*  ---------HEADER-------- */
+.headerMain {
+  background-color: rgb(255, 255, 255);
+  padding: 2px 30px 2px 30px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/*  ---------SECCIONES-------- */
+
+.main{
+  background-color: rgb(232, 232, 235);
+  font-size: 20px;
+  padding: 26px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.titulos{
+    color: darkslategray;
+    font-size: 30px;
+}
+
+footer {
+  background-color: #47525Eff;
+  padding: 10px 30px 10px 30px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+footer img {
+  width: 20px;
+}
+
+.form {
+  text-align: center;
+  margin: 20px;
+}
+
+article img {
+  height: 120px;
+  width: 120px;
+}
+
+main img {
+  height: 250px;
+  width: 250px;
+}
+
+article{
+  margin: 20px;
+}
+
+table td{
+  /*esto porque en columna Temas el numero de item 
+  pasaba a la columna paginas, probar sin esto para ver
+  que pasa*/
+  padding-left: 1em;
+}
+
+/*  ---------FAQs-------- */
+.answer{
+  font-style: italic;
+}

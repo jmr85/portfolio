@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header class="headerMain" id="arribaHeader">
+        <nav>
+            <a href="index.html"> <img src="public/logo.png" alt="logo"></a>
+            <ul class="navbar">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="about.html">Sobre nosotros</a></li>
+                <li> <a href="faqs.html">FAQs</a> </li>
+                <li> <a href="contact.html">Contacto</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <img src="public/businessman-contact.jpg" alt="">
+        <div class="form">
+            <form action="#">
+                <fieldset>
+                    <legend> Formulario Consulta</legend>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required>
+                    <br> <!-- br como provisorio -->
+                    <label for="apellido"> Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
+                    <br>
+                    <label for="psw">Contraseña</label>
+                    <input type="password" name="psw" id="psw">
+                    <br>
+
+                    <label for="talle"> Talle: </label>
+                    <br>
+                    <select name="talle" id="talle">
+                        <option value=""> Seleccioná tu talle</option>
+                        <option value="s"> S</option>
+                        <option value="m"> M</option>
+                        <option value="l">L</option>
+                    </select>
+
+                    <br>
+                    <br>
+                    <label for="pais">Pais</label>
+                    <div>Argentina</div>
+                    <input type="radio" name="pais" id="pais" value="argentina" checked="checked">
+                    <div> Uruguay</div>
+                    <input type="radio" name="pais" is="pais" value="uruguay">
+                    <div> Otro</div>
+                    <input type="radio" name="pais" id="pais" value="otro">
+
+                    <br>
+
+                    <label for="cosulta"> Escribí tu consulta</label>
+                    <br>
+
+                    <textarea name="consulta" id="" cols="30" rows="5" maxlength="500"></textarea>
+
+                    <div> Artículos</div>
+                    <input type="checkbox" name="cbox1"> Libros Programacion
+                    <input type="checkbox" name="cbox2"> Libros Ofimatica
+                    <input type="checkbox" name="cbox3"> Libros Hardware
+
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviá tu consulta">
+                    <input type="reset" value="Limpiar formulario">
+                    <input type="button" value="No hago nada">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <ul>
+            <li> <a href="index.html">Home</a> </li>
+            <li> <a href="about.html">Sobre nosotros</a></li>
+            <li> <a href="faqs.html">FAQs</a> </li>
+            <li> <a href="contact.html">Contacto</a> </li>
+            <a href="#arribaHeader">
+                Ir arriba
+                <img src="public/arrow-top.png" alt="arrow-top">
+            </a>
+        </ul>
+    </footer>
+</body>
+
+</html>
