@@ -31,59 +31,30 @@
     <main class="main">
         <!-- <img src="public/businessman-contact.jpg" alt=""> -->
         <img src="public/undraw_contact_us_15o2.svg" alt="Contact">
-        <div class="form">
-            <form action="#">
-                <fieldset>
-                    <legend> Formulario Consulta</legend>
-                    <label for="name">Nombre</label>
-                    <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" required>
-                    <br> <!-- br como provisorio -->
-                    <label for="apellido"> Apellido</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
-                    <br>
-                    <label for="psw">Contraseña</label>
-                    <input type="password" name="psw" id="psw">
-                    <br>
-
-                    <label for="talle"> Talle: </label>
-                    <br>
-                    <select name="talle" id="talle">
-                        <option value=""> Seleccioná tu talle</option>
-                        <option value="s"> S</option>
-                        <option value="m"> M</option>
-                        <option value="l">L</option>
-                    </select>
-
-                    <br>
-                    <br>
-                    <label for="pais">Pais</label>
-                    <div>Argentina</div>
-                    <input type="radio" name="pais" id="pais" value="argentina" checked="checked">
-                    <div> Uruguay</div>
-                    <input type="radio" name="pais" is="pais" value="uruguay">
-                    <div> Otro</div>
-                    <input type="radio" name="pais" id="pais" value="otro">
-
-                    <br>
-
-                    <label for="cosulta"> Escribí tu consulta</label>
-                    <br>
-
-                    <textarea name="consulta" id="" cols="30" rows="5" maxlength="500"></textarea>
-
-                    <div> Artículos</div>
-                    <input type="checkbox" name="cbox1"> Libros Programacion
-                    <input type="checkbox" name="cbox2"> Libros Ofimatica
-                    <input type="checkbox" name="cbox3"> Libros Hardware
-
-                    <br>
-                    <br>
-                    <input type="submit" value="Enviá tu consulta">
-                    <input type="reset" value="Limpiar formulario">
-                    <input type="button" value="No hago nada">
-                </fieldset>
-            </form>
-        </div>
+        <!-- <div class="form"> -->
+        <form class="main__form" action="https://formspree.io/f/xoqyblrz" method="POST">
+            <fieldset>
+                <!-- <label for="name">Name</label>
+                <br> -->
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                <!-- <br> br como provisorio -->
+                <!-- <label for="name">Email</label> -->
+                <!-- <br> -->
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <!-- <br> -->
+                <!-- <label for="subject">Subject</label> -->
+                <br>
+                <input type="text" name="subject" id="apellido" placeholder="Enter a subject" required>
+                <!-- <br> -->
+                <!-- <label for="cosulta">Question</label> -->
+                <!-- <br> -->
+                <textarea name="question" id="question" cols="30" rows="5" maxlength="500"
+                    placeholder="Write your question"></textarea>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </fieldset>
+        </form>
+        <!-- </div> -->
     </main>
 
 
