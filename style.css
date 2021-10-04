@@ -8,6 +8,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/*  ---------GLOBAL SCOPE-------- */
+li a {
+	text-decoration: none;
+}
+/*  ---------END GLOBAL SCOPE-------- */
+
 /*  ---------HEADER-------- */
 
 .header-main {
@@ -52,15 +58,31 @@ body {
   font-weight: 500;
 }
 
-/*  ---------SECCIONES-------- */
+/*  ---------END HEADER-------- */
 
+/*  ---------MAIN-------- */
 .main{
-  /* background-color: rgb(232, 232, 235); */
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
+  color: #47525Eff;
   font-size: 20px;
   padding: 26px;
   margin: 10px;
+}
+
+article{
+  margin: 20px;
+}
+
+article img {
+  height: 120px;
+  width: 120px;
+}
+
+
+main img {
+  height: 250px;
+  width: 250px;
 }
 
 .titulos{
@@ -68,6 +90,14 @@ body {
     font-size: 30px;
 }
 
+.form {
+  text-align: center;
+  margin: 20px;
+}
+
+/*  ---------END MAIN-------- */
+
+/*  ---------FOOTER-------- */
 footer {
   background-color: #47525Eff;
   border-radius: 5px;
@@ -80,10 +110,6 @@ footer ul li{
   text-transform: capitalize;
 }
 
-li a {
-	text-decoration: none;
-}
-
 footer img {
   width: 20px;
 }
@@ -93,32 +119,12 @@ footer img {
   font-weight: 500;
 }
 
-.form {
-  text-align: center;
-  margin: 20px;
-}
-
-article img {
-  height: 120px;
-  width: 120px;
-}
-
-main img {
-  height: 250px;
-  width: 250px;
-}
-
-article{
-  margin: 20px;
-}
-
-table td{
-  /*esto porque en columna Temas el numero de item 
-  pasaba a la columna paginas, probar sin esto para ver
-  que pasa*/
-  padding-left: 1em;
-}
-
 .icon--large{
   font-size: 2rem;
 }
+
+.footer--brand{
+ display: inline-block;
+}
+
+/*  ---------END FOOTER-------- */
