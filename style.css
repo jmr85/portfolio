@@ -5,25 +5,42 @@
  }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*  ---------HEADER-------- */
-.headerMain {
+.header-main {
+  display: inline-block;
   background-color: rgb(255, 255, 255);
   padding: 2px 30px 2px 30px;
   margin: 10px;
   border-radius: 5px;
 }
 
+.header-main__navbar--main li{
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1.2rem;
+  background-color:rgb(232, 232, 235);
+}
+
+.header-main__navbar--main a{
+  color:#47525Eff;
+  font-weight: 500;
+}
+
 /*  ---------SECCIONES-------- */
 
 .main{
   background-color: rgb(232, 232, 235);
+  border-radius: 5px;
   font-size: 20px;
   padding: 26px;
   margin: 10px;
-  border-radius: 5px;
 }
 
 .titulos{
@@ -33,13 +50,27 @@ body {
 
 footer {
   background-color: #47525Eff;
+  border-radius: 5px;
   padding: 10px 30px 10px 30px;
   margin: 10px;
-  border-radius: 5px;
+}
+footer ul li{
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+li a {
+	text-decoration: none;
 }
 
 footer img {
   width: 20px;
+}
+
+.footer--font a{
+  color:rgb(214, 207, 207);
+  font-weight: 500;
 }
 
 .form {
@@ -66,6 +97,10 @@ table td{
   pasaba a la columna paginas, probar sin esto para ver
   que pasa*/
   padding-left: 1em;
+}
+
+.icon--large{
+  font-size: 2rem;
 }
 
 /*  ---------FAQs-------- */

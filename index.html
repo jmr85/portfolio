@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>ecommerce-jmruiz</title>
 </head>
 
 <body>
-    <header class="headerMain" id="arribaHeader">
+    <header class="header-main" id="arribaHeader">
         <a href="index.html"> <img src="public/logo.png" alt="logo"></a>
-        <nav id="arriba">
-            <ul class="navbar">
+        <nav class="header-main__navbar--main">
+            <ul>
                 <li> <a href="index.html">Home</a> </li>
                 <li> <a href="about.html">Sobre nosotros</a></li>
                 <li> <a href="faqs.html">FAQs</a> </li>
@@ -130,18 +135,37 @@
         </article>
     </main>
 
-    <footer>
+    <footer class="footer--font">
         <ul>
             <li> <a href="index.html">Home</a> </li>
             <li> <a href="about.html">Sobre nosotros</a></li>
             <li> <a href="faqs.html">FAQs</a> </li>
             <li> <a href="contact.html">Contacto</a> </li>
-            <a href="#arribaHeader">
-                Ir arriba
-                <img src="public/arrow-top.png" alt="arrow-top">
-            </a>
+            <li><a href="#arribaHeader">
+                    Ir arriba
+                    <img src="public/arrow-top.png" alt="arrow-top">
+                </a></li>
         </ul>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook icon--large"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram icon--large"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/feed/" target="_blank">
+                    <i class="fab fa-linkedin icon--large"></i>
+                </a>
+            </li>
+        </ul>
+
     </footer>
+    <script src="https://kit.fontawesome.com/6e7ea78c9d.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
