@@ -25,6 +25,7 @@ body {
 }
 
 .header-main__navbar--main li{
+  border-radius: 0.2rem;
   display: inline-block;
   list-style: none;
   text-decoration: none;
