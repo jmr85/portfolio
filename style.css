@@ -9,12 +9,19 @@ body {
 }
 
 /*  ---------HEADER-------- */
+
 .header-main {
   display: inline-block;
   background-color: rgb(255, 255, 255);
   padding: 2px 30px 2px 30px;
   margin: 10px;
   border-radius: 5px;
+}
+
+.header-main__img-perfil{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 5rem;
 }
 
 .header-main__navbar--main li{
@@ -69,7 +76,7 @@ footer img {
 }
 
 .footer--font a{
-  color:rgb(214, 207, 207);
+  color:#d6cfcf;
   font-weight: 500;
 }
 
