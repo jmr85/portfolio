@@ -100,7 +100,6 @@ main img {
 .contact__main img {
   height: 250px;
   width: 30%;
-  /* float: left; */
 }
 
 /*  ---------MAIN FORM -------- */
@@ -114,7 +113,6 @@ main img {
 
 input, textarea{
   width: 100%;
-  /* height: 5rem; */
   margin: 2px;
   display: inline-block;
 }
