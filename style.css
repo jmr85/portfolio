@@ -60,7 +60,8 @@ body {
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   color: #47525Eff;
-  display: flex;
+  display: flex; /* --> DISPLAY FLEX */ 
+  justify-content: space-around;
   font-size: 20px;
   line-height: 2rem;
   text-align: left;
@@ -102,35 +103,57 @@ main img {
   width: 30%;
 }
 
-/*  ---------MAIN FORM -------- */
+  /*  ---------MAIN ABOUT -------- */
+  .main__about-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
- .main__form {
-  margin: 20px;
-  width: 70%;
-  height: 50%;
-  float: right;
-}
+  .main__about--img{
+    border-radius: 130px;
+    box-shadow: 5px 5px 5px #47525Eff;
+    width: 10rem;
+    height: 10rem;
+  }
 
-input, textarea{
-  width: 100%;
-  margin: 2px;
-  display: inline-block;
-}
+  .main__about-flex > i{
+    margin: 0.5rem;
+  }
+  .main__about-flex > p{
+    margin: 0.5rem;
+  }
+  /*  --------- END MAIN ABOUT -------- */
 
-input[type="submit"]{
-  width: 25%;
-  display: inline-block;
-}
-input[type="reset"]{
-  width: 25%;
-  display: inline-block;
-}
+  /*  ---------MAIN FORM -------- */
 
-fieldset {
-  border-style: none;
-}
+  .main__form {
+    margin: 20px;
+    width: 70%;
+    height: 50%;
+    float: right;
+  }
 
-/*  ---------END MAIN FORM -------- */
+  input, textarea{
+    width: 100%;
+    margin: 2px;
+    display: inline-block;
+  }
+
+  input[type="submit"]{
+    width: 25%;
+    display: inline-block;
+  }
+  input[type="reset"]{
+    width: 25%;
+    display: inline-block;
+  }
+
+  fieldset {
+    border-style: none;
+  }
+
+  /*  ---------END MAIN FORM -------- */
 
 /*  ---------END MAIN-------- */
 
