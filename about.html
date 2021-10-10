@@ -92,12 +92,14 @@
                     <li> <a href="contact.html">Contact</a> </li>
                 </ul>
             </div>
-            <div class="footer__menu">
-                <li><a href="#arribaHeader">
-                        Go Up
-                        <img src="img/arrow-top.png" alt="arrow-top">
-                    </a></li>
-                </ul>
+            <div class="footer__flex--icon-arrow-top">
+                <div class="footer__menu">
+                    <li><a href="#arribaHeader">
+                            Go Up
+                            <img src="img/arrow-top.png" alt="arrow-top">
+                        </a></li>
+                    </ul>
+                </div>
             </div>
             <div class="footer__menu footer__menu--icon">
                 <ul>
@@ -121,9 +123,14 @@
             </div>
         </div>
         <div class="footer__credit">
-            Developed by
         </div>
     </footer>
+    <script>
+        document.querySelector('.footer__credit').innerHTML = `
+            Developed by <a href="https://github.com/jmr85" target="_blank"> @jmr85</a>
+            CABA - © ${(new Date).getFullYear()}
+        `;
+    </script>
 </body>
 
 </html>

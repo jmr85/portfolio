@@ -138,8 +138,9 @@ fieldset {
 
 /*  ---------FOOTER-------- */
 .footer__flex{
-  display: flex;
+  display: flex; /* --> DISPLAY FLEX */ 
   justify-content: space-around;
+  align-items: stretch;
 }
 
 .footer__menu{
@@ -147,13 +148,19 @@ fieldset {
 }
 
 .footer__menu li{
-  list-style: none; /*lo aplica en  footer ul li*/
+  list-style: none;
   text-transform: capitalize;
 }
 
 .footer__menu--icon li{
     display: inline-block;
     padding: 0.5rem;
+}
+
+.footer__flex--icon-arrow-top {
+  display: flex; /* --> DISPLAY FLEX */ 
+  flex-direction: column;
+  justify-content: flex-end;/*posiciono abajo el icono arrow*/
 }
 
 .footer__credit{
