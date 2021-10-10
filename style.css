@@ -60,6 +60,7 @@ body {
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   color: #47525Eff;
+  display: flex;
   font-size: 20px;
   line-height: 2rem;
   text-align: left;
@@ -99,7 +100,7 @@ main img {
 .contact__main img {
   height: 250px;
   width: 30%;
-  float: left;
+  /* float: left; */
 }
 
 /*  ---------MAIN FORM -------- */
@@ -136,25 +137,51 @@ fieldset {
 /*  ---------END MAIN-------- */
 
 /*  ---------FOOTER-------- */
+.footer__flex{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__menu{
+  text-align: left;
+}
+
+.footer__menu li{
+  list-style: none; /*lo aplica en  footer ul li*/
+  text-transform: capitalize;
+}
+
+.footer__menu--icon li{
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.footer__credit{
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.7rem;
+}
+
 footer {
   background-color: #47525Eff;
   border-radius: 5px;
   padding: 10px 30px 10px 30px;
   margin: 1rem;
 }
-footer ul li{
+/* footer ul li{ REEMPLAZO POR -> .footer__menu li
   list-style: none;
   text-transform: capitalize;
+} */
+
+footer a{
+  color:#d6cfcf;
+  font-weight: 500;
 }
 
 footer img {
   width: 20px;
 }
 
-.footer--font a{
-  color:#d6cfcf;
-  font-weight: 500;
-}
 
 .icon--large{
   font-size: 2rem;
