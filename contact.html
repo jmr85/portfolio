@@ -59,37 +59,67 @@
 
 
     <footer>
-        <ul>
-            <li class="footer--brand"> <a class="a-brand" href="index.html"> Juan M Ruiz </a></li>
-            <li> <a href="index.html">Home</a> </li>
-            <li> <a href="about.html">About me</a></li>
-            <li> <a href="cv.html">CV</a></li>
-            <li> <a href="portfolio.html">Portfolio</a></li>
-            <li> <a href="skills.html">Skills</a> </li>
-            <li> <a href="contact.html">Contact</a> </li>
-            <li><a href="#arribaHeader">
-                    Go Up
-                    <img src="img/arrow-top.png" alt="arrow-top">
-                </a></li>
-        </ul>
-        <ul>
-            <li>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <i class="fab fa-facebook icon--large"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <i class="fab fa-instagram icon--large"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/feed/" target="_blank">
-                    <i class="fab fa-linkedin icon--large"></i>
-                </a>
-            </li>
-        </ul>
+        <div class="footer__flex">
+            <div class="footer__menu">
+                <ul>
+                    <li class="footer--brand"> <a class="a-brand" href="index.html"> Juan M Ruiz </a></li>
+                </ul>
+            </div>
+            <div class="footer__menu">
+
+                <ul>
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="about.html">About me</a></li>
+                    <li> <a href="cv.html">CV</a></li>
+                    <li> <a href="portfolio.html">Portfolio</a></li>
+                    <li> <a href="skills.html">Skills</a> </li>
+                    <li> <a href="contact.html">Contact</a> </li>
+                </ul>
+            </div>
+            <div class="footer__flex--icon-arrow-top">
+                <div class="footer__menu">
+                    <li><a href="#arribaHeader">
+                            Go Up
+                            <img src="img/arrow-top.png" alt="arrow-top">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__menu footer__menu--icon">
+                <ul>
+                    <li>
+                        <a href="https://github.com/jmr85" target="_blank">
+                            <i class="fab fa-github icon--large"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/jmruizn" target="_blank">
+                            <i class="fab fa-facebook icon--large"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/jmruiz85" target="_blank">
+                            <i class="fab fa-instagram icon--large"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/juanmartinruiz/" target="_blank">
+                            <i class="fab fa-linkedin icon--large"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__credit">
+            <!-- aca lo completa el script para poner la fecha dinamicamente -->
+        </div>
     </footer>
+    <script>
+        document.querySelector('.footer__credit').innerHTML = `
+            Developed by <a href="https://github.com/jmr85" target="_blank"> @jmr85</a>
+            CABA - © ${(new Date).getFullYear()}
+        `;
+    </script>
 </body>
 
 </html>

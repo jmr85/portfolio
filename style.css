@@ -139,7 +139,7 @@ fieldset {
 /*  ---------FOOTER-------- */
 .footer__flex{
   display: flex; /* --> DISPLAY FLEX */ 
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: stretch;
 }
 
@@ -172,7 +172,7 @@ fieldset {
 footer {
   background-color: #47525Eff;
   border-radius: 5px;
-  padding: 10px 30px 10px 30px;
+  padding: 40px 30px 10px 30px;
   margin: 1rem;
 }
 
@@ -192,6 +192,11 @@ footer img {
 
 .footer--brand{
  display: inline-block;
+}
+
+.footer--brand .a-brand {
+  margin: 1rem;
+  color: black; /*brand especifico del footer*/
 }
 
 /*  ---------END FOOTER-------- */
