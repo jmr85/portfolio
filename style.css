@@ -11,7 +11,9 @@ body {
 }
 
 /*  ---------HEADER-------- */
-
+img{
+ display: block; 
+}
 .header-main {
   display: inline-block;
   background-color: rgb(255, 255, 255);
@@ -66,7 +68,14 @@ body {
   line-height: 2rem;
   text-align: left;
   padding: 26px;
-  margin: 10px;
+  min-height: calc(100vh - 100px - 300px);
+}
+
+.main__flex--figure img{
+  width: 30rem;
+}
+.main__flex--h3{
+  width: 30rem;
 }
 
 article{
@@ -81,7 +90,7 @@ article img {
 article header figure img{
   width: 75%;
   height: 15rem;
-  float: right;
+  /* float: right; */
 }
 
 article p{
@@ -105,14 +114,14 @@ main img {
 
   /*  ---------MAIN ABOUT -------- */
   .main__about-flex{
-    display: flex;
+    display: flex; /* --> DISPLAY FLEX */ 
     flex-direction: column;
     align-items: center;
   }
 
   .main__about--img{
     border-radius: 130px;
-    box-shadow: 5px 5px 5px #47525Eff;
+    box-shadow: 3px 3px 3px #47525Eff;
     width: 10rem;
     height: 10rem;
   }
@@ -128,10 +137,9 @@ main img {
   /*  ---------MAIN FORM -------- */
 
   .main__form {
-    margin: 20px;
-    width: 70%;
+    margin: 1%;
+    width: 50%;
     height: 50%;
-    float: right;
   }
 
   input, textarea{
@@ -140,12 +148,16 @@ main img {
     display: inline-block;
   }
 
+  .form__button_flex{
+    display: flex; /* --> DISPLAY FLEX */ 
+  } 
+  
   input[type="submit"]{
-    width: 25%;
+    width: 50%;
     display: inline-block;
   }
   input[type="reset"]{
-    width: 25%;
+    width: 50%;
     display: inline-block;
   }
 
