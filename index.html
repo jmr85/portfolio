@@ -17,45 +17,11 @@
 </head>
 
 <body>
-    <header class="header-main" id="arribaHeader">
-        <nav class="header-main__navbar--main">
-            <ul>
-                <li> <a class="a-brand" href="index.html"> Juan M Ruiz </a></li>
-                <li> <a href="index.html">Home</a> </li>
-                <li> <a href="about.html">About me</a></li>
-                <li> <a href="cv.html">CV</a></li>
-                <li> <a href="portfolio.html">Portfolio</a></li>
-                <li> <a href="skills.html">Skills</a> </li>
-                <li> <a href="contact.html">Contact</a> </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main">
-        <div class="main__flex--h3">
-            <h3>
-                Hi, I'm Juan Martin, learning Full Stack Developer
-            </h3>
-            <p>
-                I am also a Tester Analyst and I am about to finish the degree of Systems Analyst
-            </p>
-        </div>
-        <div class="main__flex--figure">
-            <figure>
-                <img src="img/undraw_Web_developer_re_h7ie.svg" alt="Web developer">
-            </figure>
-        </div>
-    </main>
-
-    <footer>
-        <div class="footer__flex">
-            <div class="footer__menu">
+    <div id="container">
+        <header class="header-main" id="arribaHeader">
+            <nav class="header-main__navbar--main">
                 <ul>
-                    <li class="footer--brand"> <a class="a-brand" href="index.html"> Juan M Ruiz </a></li>
-                </ul>
-            </div>
-            <div class="footer__menu">
-
-                <ul>
+                    <li> <a class="a-brand" href="index.html"> Juan M Ruiz </a></li>
                     <li> <a href="index.html">Home</a> </li>
                     <li> <a href="about.html">About me</a></li>
                     <li> <a href="cv.html">CV</a></li>
@@ -63,45 +29,81 @@
                     <li> <a href="skills.html">Skills</a> </li>
                     <li> <a href="contact.html">Contact</a> </li>
                 </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="main__flex--h3">
+                <h3>
+                    Hi, I'm Juan Martin, learning Full Stack Developer
+                </h3>
+                <p>
+                    I am also a Tester Analyst and I am about to finish the degree of Systems Analyst
+                </p>
             </div>
-            <div class="footer__flex--icon-arrow-top">
+            <div class="main__flex--figure">
+                <figure>
+                    <img src="img/undraw_Web_developer_re_h7ie.svg" alt="Web developer">
+                </figure>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer__flex">
                 <div class="footer__menu">
-                    <li><a href="#arribaHeader">
-                            Go Up
-                            <img src="img/arrow-top.png" alt="arrow-top">
-                        </a></li>
+                    <ul>
+                        <li class="footer--brand"> <a class="a-brand" href="index.html"> Juan M Ruiz </a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu">
+
+                    <ul>
+                        <li> <a href="index.html">Home</a> </li>
+                        <li> <a href="about.html">About me</a></li>
+                        <li> <a href="cv.html">CV</a></li>
+                        <li> <a href="portfolio.html">Portfolio</a></li>
+                        <li> <a href="skills.html">Skills</a> </li>
+                        <li> <a href="contact.html">Contact</a> </li>
+                    </ul>
+                </div>
+                <div class="footer__flex--icon-arrow-top">
+                    <div class="footer__menu">
+                        <li><a href="#arribaHeader">
+                                Go Up
+                                <img src="img/arrow-top.png" alt="arrow-top">
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__menu footer__menu--icon">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/jmr85" target="_blank">
+                                <i class="fab fa-github icon--large"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/jmruizn" target="_blank">
+                                <i class="fab fa-facebook icon--large"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/jmruiz85" target="_blank">
+                                <i class="fab fa-instagram icon--large"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/juanmartinruiz/" target="_blank">
+                                <i class="fab fa-linkedin icon--large"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="footer__menu footer__menu--icon">
-                <ul>
-                    <li>
-                        <a href="https://github.com/jmr85" target="_blank">
-                            <i class="fab fa-github icon--large"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/jmruizn" target="_blank">
-                            <i class="fab fa-facebook icon--large"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/jmruiz85" target="_blank">
-                            <i class="fab fa-instagram icon--large"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/juanmartinruiz/" target="_blank">
-                            <i class="fab fa-linkedin icon--large"></i>
-                        </a>
-                    </li>
-                </ul>
+            <div class="footer__credit">
+                <!-- aca lo completa el script para poner la fecha dinamicamente -->
             </div>
-        </div>
-        <div class="footer__credit">
-            <!-- aca lo completa el script para poner la fecha dinamicamente -->
-        </div>
-    </footer>
+        </footer>
+    </div>
     <script>
         document.querySelector('.footer__credit').innerHTML = `
             Developed by <a href="https://github.com/jmr85" target="_blank"> @jmr85</a>
