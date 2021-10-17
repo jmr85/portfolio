@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 /*  ---------CONTENEDOR / LAYOUT PRINCIPAL-------- */
-#container{
+.container{
   display: grid;
   grid-template-areas:
   "header header header"
