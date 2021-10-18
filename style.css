@@ -233,13 +233,22 @@ main img {
   }
 
   input[type="submit"]{
-    width: 50%;
+    width: 100%;
     display: inline-block;
   }
-  input[type="reset"]{
-    width: 50%;
-    display: inline-block;
+  .btn-submit{
+    border: none; /* Remove borders */
+    color: rgb(15, 14, 14); /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    width: 100%;
   }
+  .default {background-color: #e7e7e7; color: black;} /* Gray */
+  .default:hover {background: #ddd;}
+  /* input[type="reset"]{
+    width: 20rem;
+    display: inline-block;
+  } */
 
   fieldset {
     border-style: none;
