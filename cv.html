@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio">
+    <meta name="keywords" content="portfolio, cv, HTML, CSS, JavaScript, React, Node, Express">
+    <meta name="author" content="Juan Martin Ruiz">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link
@@ -31,35 +34,39 @@
         </header>
 
         <main class="main">
-            <ul>
-                <li>
-                    <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, minus dolores libero esse qui
-                        debitis
-                        amet. Magni, libero totam debitis dolore, nulla corporis illum, tenetur minus quae dolorem esse
-                        recusandae!
-                    </p>
-                </li>
-                <li>
-                    <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium itaque quod cum autem nobis
-                        beatae facere iure commodi qui error, vero natus quam at. Cupiditate enim quasi aspernatur est
-                        rerum.
-                    </p>
-                </li>
-                <li>
-                    <h3>Lorem ipsum dolor sit amet consectetur</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptates voluptatem tempore?
-                        Alias
-                        vero error voluptatem, soluta ut necessitatibus, a in est aspernatur nulla ab, laudantium
-                        aliquam
-                        voluptatibus magnam perspiciatis.
-                    </p>
-                </li>
-            </ul>
+            <section>
+                <h3>Test Analyst</h3>
+                <h4>Q4Tech Argentina
+                    Mar. 2017 - present</h4>
+                <ul class="main__section--ul">
+                    <li>Design and execution of test
+                        cases</li>
+                    <li>Monitoring the testing cycle</li>
+                    <li>Queries and creation of scripts
+                        with SQL Server and SQLite</li>
+                    <li>Test Web environment
+                        installation</li>
+                    <li>Automated Testing with Detox
+                        for ReacNative</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Technical / Administrative -
+                    3D Printer Factory</h3>
+                <h4>Kikai Labs / Enterprise Objects
+                    Consulting SRL
+                    May 2013 - Oct. 2016</h4>
+                <ul class="main__section--ul">
+                    <li>Assembling the 3D printers</li>
+                    <li>Computer equipment
+                        maintenance</li>
+                    <li>Administration of
+                        Manufacturing, Orders,
+                        Purchase Orders and Stock
+                        through "OpenERP" software</li>
+                </ul>
+            </section>
         </main>
 
         <footer>
@@ -121,7 +128,7 @@
     </div>
     <script>
         document.querySelector('.footer__credit').innerHTML = `
-            Developed by <a href="https://github.com/jmr85" target="_blank"> @jmr85</a>
+            Developed by <a href="https://github.com/jmr85/jmr85.github.io" target="_blank"> @jmr85</a>
             CABA - © ${(new Date).getFullYear()}
         `;
     </script>

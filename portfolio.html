@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio">
+    <meta name="keywords" content="portfolio, cv, HTML, CSS, JavaScript, React, Node, Express">
+    <meta name="author" content="Juan Martin Ruiz">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link
@@ -31,25 +34,43 @@
         </header>
 
         <main class="main">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ut, suscipit, tempora cum hic fugiat
-                accusamus nemo unde vitae harum, vel praesentium iusto exercitationem voluptates corporis alias veniam
-                rerum
-                tenetur.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dolore deserunt. Ipsa qui ut a sequi
-                voluptate! Quidem similique voluptatibus, quia, praesentium, provident dicta itaque dolore a sint
-                assumenda
-                quibusdam.
-            </p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati labore aliquam nihil modi corporis
-                veritatis quod fugit eius harum corrupti, maxime temporibus enim unde dignissimos tempore quos ad
-                eveniet
-                natus.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi possimus ut quaerat laboriosam atque,
-                distinctio doloremque magnam officia harum eum aperiam qui voluptatibus neque, eligendi vero, libero
-                corrupti natus eius!
-            </p>
+            <div class="card">
+                <img src="img/ecommerce.gif" alt="ecommerce-app">
+                <div class="container-card">
+                    <h4><b>Ecommerce APP</b></h4>
+                    <p>Ecommerce done with React JS hooks, context and firebase db.</p>
+                </div>
+                <a href="https://github.com/jmr85/tienda-ruiz" target="_blank">
+                    <button class="btn default">
+                        <i class="fab fa-github icon--large"></i>
+                    </button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="img/battery-level-notification.png" alt="battery-level-notification-app">
+                <div class="container-card">
+                    <h4><b>ElectronJS Windows Desktop App</b></h4>
+                    <p>Battery Level Notification</p>
+                </div>
+                <a href="https://github.com/jmr85/battery-level-notification" target="_blank">
+                    <button class="btn default">
+                        <i class="fab fa-github icon--large"></i>
+                    </button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="img/file-system-watcher.png" alt="file-system-watcher-app">
+                <div class="container-card">
+                    <h4><b>File System Watcher GUI</b></h4>
+                    <p>C#</p>
+                </div>
+
+                <a href="https://github.com/jmr85/FileSystemWatcherGUI" target="_blank">
+                    <button class="btn default">
+                        <i class="fab fa-github icon--large"></i>
+                    </button>
+                </a>
+            </div>
         </main>
 
         <footer>
@@ -111,7 +132,7 @@
     </div>
     <script>
         document.querySelector('.footer__credit').innerHTML = `
-            Developed by <a href="https://github.com/jmr85" target="_blank"> @jmr85</a>
+            Developed by <a href="https://github.com/jmr85/jmr85.github.io" target="_blank"> @jmr85</a>
             CABA - © ${(new Date).getFullYear()}
         `;
     </script>

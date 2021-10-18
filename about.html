@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio">
+    <meta name="keywords" content="portfolio, cv, HTML, CSS, JavaScript, React, Node, Express">
+    <meta name="author" content="Juan Martin Ruiz">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link
@@ -31,22 +34,29 @@
         </header>
 
         <main class="main">
-            <div class="main__about-flex">
-                <figure>
+            <div class="main__about">
+                <figure class="main__about--figure">
                     <img class="main__about--img" src="img/perfil.jpg" alt="Web developer">
                 </figure>
-                <p>
-                    I came from the interior of the country to Buenos Aires, Argentina to train as a Systems Analyst.
-                </p>
-                <p>
+
+                <p class="main__about--text">
+                    I came from the interior of the country to Buenos Aires, Argentina to train as a Systems
+                    Analyst.
                     I like the full stack development.
                 </p>
-                <i class="fab fa-react fa-4x"></i>React <i class="fab fa-node fa-4x"></i>NodeJS/Express
+                <div class="main__about--icon-react">
+                    <i class="fab fa-react fa-4x"></i>React
+                </div>
+                <div class="main__about--icon-node">
+                    <i class="fab fa-node fa-4x"></i>NodeJS/Express
+                </div>
+                <div class="main__about--icon-db">
+                    <i class="fas fa-database fa-3x"></i> MongoDB - Firebase
+                </div>
 
-                <i class="fas fa-database fa-3x"></i> MongoDB - Firebase
-
-                <p>
-                    I like rock and pop music from the 80s and 90s. I love football. I also usually practice running.
+                <p class="main__about--text-footer">
+                    I like rock and pop music from the 80s and 90s. I love football. I also usually practice
+                    running.
                 </p>
             </div>
         </main>
@@ -110,7 +120,7 @@
     </div>
     <script>
         document.querySelector('.footer__credit').innerHTML = `
-            Developed by <a href="https://github.com/jmr85" target="_blank"> @jmr85</a>
+            Developed by <a href="https://github.com/jmr85/jmr85.github.io" target="_blank"> @jmr85</a>
             CABA - © ${(new Date).getFullYear()}
         `;
     </script>
