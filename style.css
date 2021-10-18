@@ -46,6 +46,9 @@ img{
   white-space: nowrap;
   background-color:rgb(232, 232, 235);
 }
+.a-brand:hover{
+  transform: rotateZ(360deg);
+}
 
 .header-main__img-perfil{
   border-radius: 5rem;
@@ -68,6 +71,14 @@ img{
 .header-main__navbar--main a{
   color:#47525Eff;
   font-weight: 500;
+  transition: all 0.8s;
+}
+
+.header-main__navbar--main li a:hover {
+  background-color: #d8d8d8;
+  border-radius: 0.2rem;
+  font-size: 1.1rem;
+  padding: 20px;
 }
 
 /*  ---------END HEADER-------- */
@@ -110,7 +121,6 @@ article img {
 article header figure img{
   width: 75%;
   height: 15rem;
-  /* float: right; */
 }
 
 article p{
@@ -218,7 +228,32 @@ main img {
     .default:hover {background: #ddd;}
   /*  ---------END MAIN PORTFOLIO -------- */
 
-  /*  ---------MAIN FORM -------- */
+  /*  --------- MAIN SKILLS -------------- */
+  #file{
+    animation-name: skill_progress_effect;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+  }
+  @keyframes skill_progress_effect {
+    0%{ 
+      width: 10px; 
+    }
+    25%{ 
+      width: 50px; 
+    }
+    50%{ 
+      width: 100px;
+    }
+    75%{ 
+      width: 200px;
+    }
+    100%{ 
+      width: 100px;
+    }
+ }
+  /*  ---------END MAIN SKILLS ------------ */
+
+  /*  ---------MAIN FORM ------------------ */
 
   .main__form {
     margin: 1%;
@@ -236,8 +271,15 @@ main img {
     width: 100%;
     display: inline-block;
   }
+  input, textarea{
+    transition: all 1s;
+  }
+  input, textarea:focus{
+    font-size: 22px;
+  }
   .btn-submit{
     border: none; /* Remove borders */
+    border-radius: 0.2rem;
     color: rgb(15, 14, 14); /* Add a text color */
     padding: 14px 28px; /* Add some padding */
     cursor: pointer; /* Add a pointer cursor on mouse-over */
@@ -263,7 +305,8 @@ main img {
 footer {
   grid-area: footer;
   align-self: end;
-  background-color: #47525Eff;
+  /* background-color: #47525Eff; */
+  background-image: linear-gradient(to top, #47525Eff 0%, rgb(255, 255, 255) 100%);
   border-radius: 5px;
   padding: 40px 30px 10px 30px;
   margin: 1rem;
@@ -302,7 +345,8 @@ footer {
 }
 
 footer a{
-  color:#d6cfcf;
+  /* color:#d6cfcf; */
+  color: rgb(63, 63, 63);
   font-weight: 500;
 }
 
@@ -322,5 +366,4 @@ footer img {
   margin: 1rem;
   color: black; /*brand especifico del footer*/
 }
-
 /*  ---------END FOOTER-------- */
