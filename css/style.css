@@ -2,7 +2,7 @@
   /* setea a 0 porque c/ browser impl diferente */
   padding: 0px;
   margin: 0px;
-  text-decoration: none;
+  text-decoration: none !important;/*solo este important porque bootstrap me lo "desactiva"*/
   box-sizing: border-box;
  }
 
@@ -56,7 +56,7 @@ img{
   height: 6rem;
 }
 
-.header-main__navbar--main li{
+/* .header-main__navbar--main li{
   border-radius: 0.2rem;
   border-style: solid;
   border-color: white;
@@ -66,21 +66,23 @@ img{
   text-align: center;
   font-size: 1rem;
   padding: 1.2rem;
-}
+} */
 
-.header-main__navbar--main a{
+/* .header-main__navbar--main a{
   color:#47525Eff;
   font-weight: 500;
   transition: all 0.8s;
-}
+} */
 
-.header-main__navbar--main li a:hover {
+/* .header-main__navbar--main li a:hover {
   background-color: #d8d8d8;
   border-radius: 0.2rem;
   font-size: 1.1rem;
   padding: 20px;
+} */
+nav .navbar{
+  width: 100%;
 }
-
 /*  ---------END HEADER-------- */
 
 /*  ---------MAIN-------- */
@@ -90,7 +92,7 @@ img{
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   color: #47525Eff;
-  display: flex; /* --> DISPLAY FLEX */ 
+  display: flex; /* --> DISPLAY FLEX */
   justify-content: space-around;
   flex-wrap: wrap;
   font-size: 20px;
@@ -195,41 +197,16 @@ main img {
   /*  --------- END MAIN CV -------- */
   /*  --------- MAIN PORTFOLIO -------- */
 
-    /* Card -> https://www.w3schools.com/howto/howto_css_cards.asp */
-    .card {
-      /* Add shadows to create the "card" effect */
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      transition: 0.3s;
+    /* card de bootstrap */
+    .card{
+      margin: 4px;
+      width: 22rem;
     }
-    .card img {
-      width: 100%;
-    }
-    .card i{
-      color: #47525Eff;/*icono github del card*/
-    }
-    .container-card {
-      padding: 2px 16px;
-    }
-    
-    /* On mouse-over, add a deeper shadow */
-    .card:hover {
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }
-
-    /* boton del card -> https://www.w3schools.com/howto/howto_css_alert_buttons.asp */
-    .btn {
-      border: none; /* Remove borders */
-      color: white; /* Add a text color */
-      padding: 14px 28px; /* Add some padding */
-      cursor: pointer; /* Add a pointer cursor on mouse-over */
-      width: 100%;
-    }
-    .default {background-color: #e7e7e7; color: black;} /* Gray */
-    .default:hover {background: #ddd;}
+ 
   /*  ---------END MAIN PORTFOLIO -------- */
 
   /*  --------- MAIN SKILLS -------------- */
-  #file{
+  .file{
     animation-name: skill_progress_effect;
     animation-timing-function: ease-in-out;
     animation-duration: 1s;
@@ -251,20 +228,25 @@ main img {
       width: 100px;
     }
  }
+
+  .lb-sm {
+    font-size: 12px;
+  }
+
+  .lb-md {
+    font-size: 16px;
+  }
+
+  .lb-lg {
+    font-size: 20px;
+  }
   /*  ---------END MAIN SKILLS ------------ */
 
   /*  ---------MAIN FORM ------------------ */
 
   .main__form {
-    margin: 1%;
     width: 50%;
     height: 50%;
-  }
-
-  input, textarea{
-    width: 100%;
-    margin: 2px;
-    display: inline-block;
   }
 
   input[type="submit"]{
@@ -277,24 +259,9 @@ main img {
   input, textarea:focus{
     font-size: 22px;
   }
-  .btn-submit{
-    border: none; /* Remove borders */
-    border-radius: 0.2rem;
-    color: rgb(15, 14, 14); /* Add a text color */
-    padding: 14px 28px; /* Add some padding */
-    cursor: pointer; /* Add a pointer cursor on mouse-over */
-    width: 100%;
-  }
+  
   .default {background-color: #e7e7e7; color: black;} /* Gray */
   .default:hover {background: #ddd;}
-  /* input[type="reset"]{
-    width: 20rem;
-    display: inline-block;
-  } */
-
-  fieldset {
-    border-style: none;
-  }
 
   /*  ---------END MAIN FORM -------- */
 
