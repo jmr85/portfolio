@@ -4,6 +4,7 @@
   margin: 0px;
   text-decoration: none !important;/*solo este important porque bootstrap me lo "desactiva"*/
   box-sizing: border-box;
+  overflow-x: hidden; /* para que no se vea el scroll horizontal */
  }
 
 body {
