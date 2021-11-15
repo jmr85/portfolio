@@ -8,7 +8,7 @@
     display: flex; /* --> DISPLAY FLEX */
     justify-content: space-around;
     flex-wrap: wrap;
-    font-size: 20px;
+    font-size: $font-size-main;
     line-height: 2rem;
     text-align: left;
     padding: 26px;
@@ -136,15 +136,15 @@
    }
   
     .lb-sm {
-      font-size: 12px;
+      font-size: $font-size-main - 4;/*label small skill*/
     }
   
     .lb-md {
-      font-size: 16px;
+      font-size: $font-size-main - 2;/*label medium skill*/
     }
   
     .lb-lg {
-      font-size: 20px;
+      font-size: $font-size-main;/*label large skill*/
     }
     /*  ---------END MAIN SKILLS ------------ */
   

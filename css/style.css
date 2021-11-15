@@ -238,15 +238,18 @@ main img {
 }
 
 .lb-sm {
-  font-size: 12px;
+  font-size: 16px;
+  /*label small skill*/
 }
 
 .lb-md {
-  font-size: 16px;
+  font-size: 18px;
+  /*label medium skill*/
 }
 
 .lb-lg {
   font-size: 20px;
+  /*label large skill*/
 }
 
 /*  ---------END MAIN SKILLS ------------ */
