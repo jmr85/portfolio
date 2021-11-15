@@ -58,30 +58,6 @@ img{
   height: 6rem;
 }
 
-/* .header-main__navbar--main li{
-  border-radius: 0.2rem;
-  border-style: solid;
-  border-color: white;
-  display: inline-block;
-  list-style: none;
-  text-transform: capitalize;
-  text-align: center;
-  font-size: 1rem;
-  padding: 1.2rem;
-} */
-
-/* .header-main__navbar--main a{
-  color:#47525Eff;
-  font-weight: 500;
-  transition: all 0.8s;
-} */
-
-/* .header-main__navbar--main li a:hover {
-  background-color: #d8d8d8;
-  border-radius: 0.2rem;
-  font-size: 1.1rem;
-  padding: 20px;
-} */
 nav .navbar{
   width: 100%;
 }
