@@ -1,96 +1,98 @@
+@charset "UTF-8";
 * {
   /* setea a 0 porque c/ browser impl diferente */
   padding: 0px;
   margin: 0px;
-  text-decoration: none !important;/*solo este important porque bootstrap me lo "desactiva"*/
-  box-sizing: border-box;
-  overflow-x: hidden; /* para que no se vea el scroll horizontal */
- }
+  text-decoration: none !important;
+  /*solo este important porque bootstrap me lo "desactiva"*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  /* para que no se vea el scroll horizontal */
+}
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-/*  ---------CONTENEDOR / LAYOUT PRINCIPAL-------- */
-.container{
-  display: grid; /* --> DISPLAY GRID CONTAINER*/
-  grid-template-areas:
-  "header header header"
-  "main main main"
-  "footer footer footer";
-  grid-template-rows: 1fr 2fr 1fr; /* defino altura filas -> solucionó espacio blanco footer */
-  grid-template-columns: 40% auto 40%;/* defino altura columnas */
-  row-gap: 5px; /* grid-row-gap visual studio lo marca como obsoleto, uso el nuevo row-gap */
-  height: 100vh; /*solucionó espacio blanco footer */
-}
-/*  ---------  END CONTENEDOR / LAYOUT PRINCIPAL-------- */
 
-/*  ---------HEADER-------- */
-img{
- display: block; 
+img {
+  display: block;
 }
+
 .header-main {
-  grid-area: header; 
-  justify-self: start;
+  grid-area: header;
+  -ms-grid-column-align: start;
+      justify-self: start;
   display: inline-block;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   padding: 2px 10px 2px 10px;
   margin: 10px;
   border-radius: 5px;
-  width: 100%; /*solucionó espacio blanco footer */
+  width: 100%;
+  /*solucionó espacio blanco footer */
 }
 
-.a-brand{
+.a-brand {
   border-radius: 0.2rem;
   display: inline-block;
   padding-top: 0rem;
   padding: 0.5rem;
   line-height: inherit;
   white-space: nowrap;
-  background-color:rgb(232, 232, 235);
-}
-.a-brand:hover{
-  transform: rotateZ(360deg);
+  background-color: #ffffff;
 }
 
-.header-main__img-perfil{
-  border-radius: 5rem;
-  width: 6rem;
-  height: 6rem;
+.a-brand:hover {
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
 }
 
-nav .navbar{
+nav .navbar {
   width: 100%;
 }
-/*  ---------END HEADER-------- */
 
 /*  ---------MAIN-------- */
-.main{
+.main {
   grid-area: main;
-  align-self: stretch;
-  background-color: rgb(255, 255, 255);
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  background-color: #ffffff;
   border-radius: 5px;
   color: #47525Eff;
-  display: flex; /* --> DISPLAY FLEX */
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* --> DISPLAY FLEX */
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-size: 20px;
   line-height: 2rem;
   text-align: left;
   padding: 26px;
 }
 
-  /*  ---------MAIN INDEX-------- */
-    .main__flex--figure img{
-      width: 30rem;
-    }
-    .main__flex--h3{
-      width: 30rem;
-    }
-  /*  ---------END MAIN INDEX-------- */
+.main section {
+  color: #47525Eff;
+}
 
+/*  ---------MAIN INDEX-------- */
+.main__flex--figure img {
+  width: 30rem;
+}
 
-article{
+.main__flex--h3 {
+  width: 30rem;
+}
+
+/*  ---------END MAIN INDEX-------- */
+article {
   margin: 20px;
+}
+
+article p {
+  width: 25%;
 }
 
 article img {
@@ -98,217 +100,273 @@ article img {
   width: 120px;
 }
 
-article header figure img{
-  width: 75%;
-  height: 15rem;
-}
-
-article p{
-  width: 25%;
-}
-
 main img {
   height: 250px;
   width: 250px;
 }
 
-.titulos{
-    color: darkslategray;
-    font-size: 30px;
+/*  ---------MAIN ABOUT -------- */
+.main__about {
+  display: -ms-grid;
+  display: grid;
+  /* --> DISPLAY GRID ABOUT*/
+      grid-template-areas: "texta texta" "figure iconreact" "figure iconnode" "icondb icondb" "footert footert";
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: 0.5fr 1fr;
+      grid-template-columns: 0.5fr 1fr;
 }
 
-.contact__main img {
-  height: 250px;
-  width: 30%;
+.main__about--figure {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: figure;
+  padding: 1rem;
 }
 
-  /*  ---------MAIN ABOUT -------- */
-  .main__about{
-    display: grid; /* --> DISPLAY GRID ABOUT*/ 
-    grid-template-areas:
-    "texta texta"
-    "figure iconreact"
-    "figure iconnode"
-    "icondb icondb"
-    "footert footert";
-    grid-template-rows: auto; 
-    grid-template-columns: 0.5fr 1fr;
-  }
-  .main__about--figure{
-    grid-area: figure; 
-    padding: 1rem;
-  }
-  .main__about--text{
-    grid-area: texta;
-  }
-  .main__about--icon-react{
-    grid-area: iconreact; 
-  }
-  .main__about--icon-node{
-    grid-area: iconnode;
-  }
-  .main__about--icon-db{
-    grid-area: icondb;
-  }
-  .main__about--text-footer{
-    grid-area: footert;
-    padding: 1rem;
-    margin: 1rem;
-  }
-  .main__about--img{
-    border-radius: 130px;
-    box-shadow: 3px 3px 3px #47525Eff;
-  }
+.main__about--text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: texta;
+}
 
-  .main__about > i{
-    margin: 0.5rem;
-  }
-  .main__about > p{
-    margin: 0.5rem;
-  }
-  /*  --------- END MAIN ABOUT -------- */
-  /*  --------- MAIN CV -------- */
-    .main__section--ul{
-      margin-top: 1rem;
-      padding-left: 2rem;/*le da sangria a los items del cv*/
-    }
-  /*  --------- END MAIN CV -------- */
-  /*  --------- MAIN PORTFOLIO -------- */
+.main__about--icon-react {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: iconreact;
+}
 
-    /* card de bootstrap */
-    .card{
-      margin: 4px;
-      width: 22rem;
-    }
- 
-  /*  ---------END MAIN PORTFOLIO -------- */
+.main__about--icon-node {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: iconnode;
+}
 
-  /*  --------- MAIN SKILLS -------------- */
-  .file{
-    animation-name: skill_progress_effect;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1s;
+.main__about--icon-db {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: icondb;
+}
+
+.main__about--text-footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footert;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.main__about--img {
+  border-radius: 130px;
+  -webkit-box-shadow: 3px 3px 3px #47525Eff;
+          box-shadow: 3px 3px 3px #47525Eff;
+}
+
+.main__about > i {
+  margin: 0.5rem;
+}
+
+.main__about > p {
+  margin: 0.5rem;
+}
+
+/*  --------- END MAIN ABOUT -------- */
+/*  --------- MAIN CV -------- */
+.main__section--ul {
+  margin-top: 1rem;
+  padding-left: 2rem;
+  /*le da sangria a los items del cv*/
+}
+
+/*  --------- END MAIN CV -------- */
+/*  --------- MAIN PORTFOLIO -------- */
+/* card de bootstrap */
+.card {
+  margin: 4px;
+  width: 22rem;
+}
+
+/*  ---------END MAIN PORTFOLIO -------- */
+/*  --------- MAIN SKILLS -------------- */
+.file {
+  -webkit-animation-name: skill_progress_effect;
+          animation-name: skill_progress_effect;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes skill_progress_effect {
+  0% {
+    width: 10px;
   }
-  @keyframes skill_progress_effect {
-    0%{ 
-      width: 10px; 
-    }
-    25%{ 
-      width: 50px; 
-    }
-    50%{ 
-      width: 100px;
-    }
-    75%{ 
-      width: 200px;
-    }
-    100%{ 
-      width: 100px;
-    }
- }
-
-  .lb-sm {
-    font-size: 12px;
+  25% {
+    width: 50px;
   }
-
-  .lb-md {
-    font-size: 16px;
+  50% {
+    width: 100px;
   }
-
-  .lb-lg {
-    font-size: 20px;
+  75% {
+    width: 200px;
   }
-  /*  ---------END MAIN SKILLS ------------ */
-
-  /*  ---------MAIN FORM ------------------ */
-
-  .main__form {
-    width: 50%;
-    height: 50%;
+  100% {
+    width: 100px;
   }
+}
 
-  input[type="submit"]{
-    width: 100%;
-    display: inline-block;
+@keyframes skill_progress_effect {
+  0% {
+    width: 10px;
   }
-  input, textarea{
-    transition: all 1s;
+  25% {
+    width: 50px;
   }
-  input, textarea:focus{
-    font-size: 22px;
+  50% {
+    width: 100px;
   }
-  
-  .default {background-color: #e7e7e7; color: black;} /* Gray */
-  .default:hover {background: #ddd;}
+  75% {
+    width: 200px;
+  }
+  100% {
+    width: 100px;
+  }
+}
 
-  /*  ---------END MAIN FORM -------- */
+.lb-sm {
+  font-size: 12px;
+}
 
+.lb-md {
+  font-size: 16px;
+}
+
+.lb-lg {
+  font-size: 20px;
+}
+
+/*  ---------END MAIN SKILLS ------------ */
+/*  ---------MAIN FORM ------------------ */
+.main__form {
+  height: 50%;
+  width: 50%;
+}
+
+input[type="submit"] {
+  width: 100%;
+  display: inline-block;
+}
+
+input, textarea {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+input, textarea:focus {
+  font-size: 22px;
+}
+
+.default {
+  background-color: #e7e7e7;
+  color: black;
+}
+
+/* Gray */
+.default:hover {
+  background: #ddd;
+}
+
+/*  ---------END MAIN FORM -------- */
 /*  ---------END MAIN-------- */
-
-/*  ---------FOOTER-------- */
-
 footer {
   grid-area: footer;
-  align-self: end;
-  /* background-color: #47525Eff; */
-  background-image: linear-gradient(to top, #47525Eff 0%, rgb(255, 255, 255) 100%);
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  /* background-color: $color-primary-gray; */
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#47525Eff), to(#ffffff));
+  background-image: linear-gradient(to top, #47525Eff 0%, #ffffff 100%);
   border-radius: 5px;
   padding: 40px 30px 10px 30px;
   margin: 1rem;
 }
 
-.footer__flex{
-  display: flex; /* --> DISPLAY FLEX */ 
-  justify-content: space-between;
-  align-items: stretch;
-}
-
-.footer__menu{
-  text-align: left;
-}
-
-.footer__menu li{
-  list-style: none;
-  text-transform: capitalize;
-}
-
-.footer__menu--icon li{
-    display: inline-block;
-    padding: 0.5rem;
-}
-
-.footer__flex--icon-arrow-top {
-  display: flex; /* --> DISPLAY FLEX */ 
-  flex-direction: column;
-  justify-content: flex-end;/*posiciono abajo el icono arrow*/
-}
-
-.footer__credit{
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.7rem;
-}
-
-footer a{
-  /* color:#d6cfcf; */
-  color: rgb(63, 63, 63);
+footer a {
+  color: #3f3f3f;
   font-weight: 500;
+}
+
+footer a:hover {
+  color: #47525Eff;
 }
 
 footer img {
   width: 20px;
 }
 
-.icon--large{
+.footer__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* --> DISPLAY FLEX */
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.footer__menu {
+  text-align: left;
+}
+
+.footer__menu li {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.footer__menu--icon li {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+.footer__flex--icon-arrow-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* --> DISPLAY FLEX */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  /*posiciono abajo el icono arrow*/
+}
+
+.footer__credit {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.7rem;
+}
+
+.icon--large {
   font-size: 2rem;
 }
 
-.footer--brand{
- display: inline-block;
+.footer--brand {
+  display: inline-block;
 }
 
 .footer--brand .a-brand {
   margin: 1rem;
-  color: black; /*brand especifico del footer*/
+  color: black;
+  /*brand especifico del footer*/
 }
-/*  ---------END FOOTER-------- */
+/*# sourceMappingURL=style.css.map */

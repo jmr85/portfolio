@@ -1,0 +1,173 @@
+/*  ---------MAIN-------- */
+.main{
+    grid-area: main;
+    align-self: stretch;
+    background-color: $color-primary-white;
+    border-radius: 5px;
+    color: $color-primary-gray;
+    display: flex; /* --> DISPLAY FLEX */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 2rem;
+    text-align: left;
+    padding: 26px;
+
+    section{
+        color: $color-primary-gray;  
+    }
+   
+  }
+  
+    /*  ---------MAIN INDEX-------- */
+      .main__flex--figure img{
+        width: 30rem;
+      }
+      .main__flex--h3{
+        width: 30rem;
+      }
+    /*  ---------END MAIN INDEX-------- */
+  
+  
+  article{
+    margin: 20px;
+
+    p{
+      width: 25%;
+    }
+
+    img {
+      @include size(120px, 120px);
+    }
+  }
+  
+  // article header figure img{
+  //   width: 75%;
+  //   height: 15rem;
+  // }
+  
+  main img {
+    @include size(250px, 250px);
+  }
+  
+    /*  ---------MAIN ABOUT -------- */
+    .main__about{
+      display: grid; /* --> DISPLAY GRID ABOUT*/ 
+      grid-template-areas:
+      "texta texta"
+      "figure iconreact"
+      "figure iconnode"
+      "icondb icondb"
+      "footert footert";
+      grid-template-rows: auto; 
+      grid-template-columns: 0.5fr 1fr;
+    }
+    .main__about--figure{
+      grid-area: figure; 
+      padding: 1rem;
+    }
+    .main__about--text{
+      grid-area: texta;
+    }
+    .main__about--icon-react{
+      grid-area: iconreact; 
+    }
+    .main__about--icon-node{
+      grid-area: iconnode;
+    }
+    .main__about--icon-db{
+      grid-area: icondb;
+    }
+    .main__about--text-footer{
+      grid-area: footert;
+      padding: 1rem;
+      margin: 1rem;
+    }
+    .main__about--img{
+      border-radius: 130px;
+      box-shadow: 3px 3px 3px $color-primary-gray;
+    }
+  
+    .main__about > i{
+      margin: 0.5rem;
+    }
+    .main__about > p{
+      margin: 0.5rem;
+    }
+    /*  --------- END MAIN ABOUT -------- */
+    /*  --------- MAIN CV -------- */
+      .main__section--ul{
+        margin-top: 1rem;
+        padding-left: 2rem;/*le da sangria a los items del cv*/
+      }
+    /*  --------- END MAIN CV -------- */
+    /*  --------- MAIN PORTFOLIO -------- */
+  
+      /* card de bootstrap */
+      .card{
+        margin: 4px;
+        width: 22rem;
+      }
+   
+    /*  ---------END MAIN PORTFOLIO -------- */
+  
+    /*  --------- MAIN SKILLS -------------- */
+    .file{
+      animation-name: skill_progress_effect;
+      animation-timing-function: ease-in-out;
+      animation-duration: 1s;
+    }
+    @keyframes skill_progress_effect {
+      0%{ 
+        width: 10px; 
+      }
+      25%{ 
+        width: 50px; 
+      }
+      50%{ 
+        width: 100px;
+      }
+      75%{ 
+        width: 200px;
+      }
+      100%{ 
+        width: 100px;
+      }
+   }
+  
+    .lb-sm {
+      font-size: 12px;
+    }
+  
+    .lb-md {
+      font-size: 16px;
+    }
+  
+    .lb-lg {
+      font-size: 20px;
+    }
+    /*  ---------END MAIN SKILLS ------------ */
+  
+    /*  ---------MAIN FORM ------------------ */
+  
+    .main__form {
+      @include size(50%, 50%);
+    }
+  
+    input[type="submit"]{
+      width: 100%;
+      display: inline-block;
+    }
+    input, textarea{
+      transition: all 1s;
+    }
+    input, textarea:focus{
+      font-size: 22px;
+    }
+    
+    .default {background-color: #e7e7e7; color: black;} /* Gray */
+    .default:hover {background: #ddd;}
+  
+    /*  ---------END MAIN FORM -------- */
+  
+  /*  ---------END MAIN-------- */
