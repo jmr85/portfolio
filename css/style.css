@@ -52,7 +52,7 @@ nav .navbar {
 }
 
 /*  ---------MAIN-------- */
-.main {
+.main, .main--detail {
   grid-area: main;
   -ms-flex-item-align: stretch;
       align-self: stretch;
@@ -73,20 +73,24 @@ nav .navbar {
   padding: 26px;
 }
 
-.main section {
+.main section, .main--detail section {
   color: #47525Eff;
 }
 
 /*  ---------MAIN INDEX-------- */
-.main__flex--figure img {
+.main__flex--figure img, .main--detail .main__flex--figure--detail img {
   width: 30rem;
 }
 
-.main__flex--h3 {
+.main__flex--h3, .main--detail .main__flex--h3--detail {
   width: 30rem;
 }
 
 /*  ---------END MAIN INDEX-------- */
+.main--detail .main__flex--figure--detail img {
+  width: 20rem;
+}
+
 article {
   margin: 20px;
 }
