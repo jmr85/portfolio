@@ -1,6 +1,6 @@
 # Portfolio
 
-Developed with HTML5 and CSS3
+Developed with HTML5, CSS3, JS Vanilla and [Bootstrap](https://getbootstrap.com/)
 
 
 ## Autores ✒️
